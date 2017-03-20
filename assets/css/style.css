@@ -1,0 +1,180 @@
+/*PORTFOLIO PAGE STYLING, corner of header */
+.logo {
+	height: 50px;
+	width: auto;
+	margin: 15px;
+}
+.heading-container {
+	font-family: 'Open Sans';
+	text-align: center;
+	font-size: 24px;
+	width: 100%;
+}
+/*sidebar */
+.sidebar {
+	width: 20%;
+	position: fixed;
+}
+.sidenav-container {
+	margin: 10px;
+}
+
+.sidebar-item a {
+	font-family: 'Comfortaa', cursive;
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+
+.sidebar-item a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+body#projects a#projects-lnk {
+	color: #fff;
+} 
+
+/*PORTFOLIO PAGE STYLING, body grid*/
+#portfolio-content {
+	width: 80%;
+	position: relative;
+	left: 250px;
+}
+#portfolio-content a {
+	text-decoration: none;
+}
+
+.sub-container {
+	font-family: 'Comfortaa', cursive;
+	color: #818181;
+	display: inline-block;
+	width:  280px;
+ 	margin: 10px;
+ 	padding: 5px;
+}
+.sub-container a {
+	text-decoration: none;
+}
+.thumb-container {
+	height: 200px; 
+	width:  280px;
+	overflow: hidden;
+}
+
+
+/* project thumbnails */
+.proj-thumb {
+	max-width: 100%;
+}
+.proj-title {
+	color: ;
+	margin: 8px 0px;
+}
+.proj-yr {
+	font-weight: 700;
+}
+
+/*darken the thumbnail*/
+.thumb-container img {
+    display: block;
+}
+.thumb-container:hover .thumb-wrap {
+    background-color: black;
+}
+
+.thumb-container:hover img {
+    opacity: 0.85;
+}
+
+
+/*back to the top link*/
+.up-arrow {
+	width: 20px;
+	height: auto;
+	color: #818181;
+}
+.back-to-top {
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	margin: 15px;
+	font-size: 16px;
+}
+.back-to-top:hover {
+	cursor: pointer;
+}
+
+/*ABOUT ME PAGE STYLING*/
+#me-pic-wrap {
+	width: 50%;
+}
+#me-pic {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+#aboutme-title {
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	font-size: 30px;
+	margin: 30px 10px;
+	text-align: right;
+}
+#aboutme-content {
+	width: 80%;
+	position: relative;
+	left: 250px;
+}
+#aboutme-body {
+	display: inline-block;
+}
+#aboutme-text {
+	font-family: 'Open Sans';
+	font-size: ;
+	margin: ;
+}
+#aboutme-btt {
+	text-align: center;
+}
+
+/*GENERAL PROJECT PAGE STYLING*/
+.proj-page-title {
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	font-size: 30px;
+	margin: 30px 0px;
+}
+.proj-page-description {
+	line-height: 1.3;
+	font-family: 'Open Sans';
+	margin: 10px 15px;
+	font-size: 17px;
+	color: #7c7c7c;
+}
+.proj-page-content {
+	width: 80%;
+	position: relative;
+	left: 250px;
+	text-align: center;
+}
+
+/*PRPR Project Page Styling*/
+#prpr-pic-container {
+	display: inline-block;
+}
+#prpr-propic {
+	width: 400px;
+	margin: 12px 30px;
+}
+#prpr-cover {
+	width: 450px;
+	margin: 8px 30px;
+	position: relative;
+	bottom: 120px;
+}
+
+
+/*SERC Poster Project page styling*/
