@@ -176,6 +176,9 @@ body#projects a#projects-lnk {
 	left: 250px;
 	text-align: center;
 }
+.proj-pic-container {
+	margin: 22px 0px;
+}
 
 /*PRPR Project Page Styling*/
 #prpr-pic-container {
