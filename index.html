@@ -2,42 +2,57 @@
 <html>
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="assets/js/script.js"></script>
 	<!-- IMPORTANT: for scaling to device screens! -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Link To Bootstrap 4 Beta -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-	 crossorigin="anonymous">
+	<!-- Link To Bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+
+	<!-- Link to Font Awesome  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Link to Stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
-	<div id="view1">
+	<section class="section view1">
+		<div class="container">
+
+
+			<a href="/home">
+				<img style="height: 80px; width: auto;" src="assets/img/my_logo_white.png">
+			</a>
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation">
+					<a class="nav-link" href="/about-me">ABOUT ME</a>
+				</li>
+				<li role="presentation">
+					<a class="nav-link" href="/applications">APPLICATIONS</a>
+				</li>
+				<li role="presentation">
+					<a class="nav-link" href="/applications">OTHER WORK</a>
+				</li>
+				<li role="presentation">
+					<a class="nav-link" href="/applications">PHOTOGRAPHY</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section view2">
 		<div class="container">
 			<div class="row">
-				<div class="col-3-md col-8-xs">
-					<a href="/home">
-						<img src="assets/img/my_logo_white.png">
-					</a>
-					<a href="/about-me">ABOUT ME</a>
-					<a href="/applications">APPLICATIONS</a>
-					<a href="/applications">OTHER WORK</a>
-					<a href="/applications">PHOTOGRAPHY</a>
-				</div>
+				<h1>Portfolio</h1>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="view2">
-		<div class="container">
-			<div class="row">
+	<script src="assets/js/script.js"></script>
 
-			</div>
-		</div>
-	</div>
 </body>
 
 </html>
