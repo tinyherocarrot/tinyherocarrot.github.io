@@ -1,10 +1,28 @@
 $(document).ready(function() {
-// BACK TO TOP FUNCTIONALITY
-	$(".back-to-top").click(function() {
-		 	$('html, body').animate({
-		    	scrollTop: "0px"
-		 	}, 400);
-		})
+	// variables
+	// -------------------
+	var screenheight = parseInt($(window).innerHeight());
 
-//THUMBNAIL HOVER DARKEN
+
+	// functions
+	// -------------------
+	function fixNav() {
+		$(".navbar").addClass("is-fixed-top");
+		$("html").addClass("has-navbar-fixed-top");
+	}
+	function unfixNav() {
+    $(".navbar").removeClass("is-fixed-top");
+    $("html").removeClass("has-navbar-fixed-top");
+  }
+
+
+	// main logic
+	$(document).scroll(function() {
+		console.log($(window).scrollTop(), screenheight)
+		if ($(window).scrollTop() > screenheight) {
+			fixNav();
+		} else {
+			unfixNav();
+		}
+	})
 })

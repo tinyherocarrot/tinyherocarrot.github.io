@@ -16,31 +16,40 @@
 
 	<!-- Link to Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,700" rel="stylesheet">
+
+	<!-- jQuery Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 	<section class="section view1">
-		<div class="container">
-
-
-			<a href="/home">
-				<img style="height: 80px; width: auto;" src="assets/img/my_logo_white.png">
-			</a>
-			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation">
-					<a class="nav-link" href="/about-me">ABOUT ME</a>
-				</li>
-				<li role="presentation">
-					<a class="nav-link" href="/applications">APPLICATIONS</a>
-				</li>
-				<li role="presentation">
-					<a class="nav-link" href="/applications">OTHER WORK</a>
-				</li>
-				<li role="presentation">
-					<a class="nav-link" href="/applications">PHOTOGRAPHY</a>
-				</li>
-			</ul>
-		</div>
+		<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/">
+					<img  src="assets/img/my_logo_white.png" alt="Andrew is a great developer!" height="60px" width="auto">
+				</a>
+				<button class="button navbar-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<div class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="/about-me">ABOUT ME</a>
+					<a class="navbar-item" href="/applications">APPLICATIONS</a>			
+					<a class="navbar-item" href="/applications">UI/UX </a>			
+					<a class="navbar-item" href="/applications">PHOTOGRAPHY</a>
+				</div>
+			</div>
+		</nav>
+		<div class=" center-hero">
+				<div>
+					<h1 class="title is-1 center-hero-content">Andrew Huang</h1>
+					<h3 class="subtitle is-3 center-hero-content">developer | designer</h3>
+				</div>
+			</div>
 	</section>
 
 	<section class="section view2">
@@ -51,8 +60,15 @@
 		</div>
 	</section>
 
+	<section class="section view2">
+		<div class="container">
+			<div class="row">
+				<h1>Portfolio</h1>
+			</div>
+		</div>
+	</section>
+	
 	<script src="assets/js/script.js"></script>
-
 </body>
 
 </html>
