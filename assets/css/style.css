@@ -43,10 +43,14 @@
 #view2 .is-child {
   height: 12em;
   text-align: center;
+  -webkit-transition: width 2s ease-in-out, height 2s ease-in-out;
+  -moz-transition: width 2s ease-in-out, height 2s ease-in-out;
+  transition: width 2s ease-in-out, height 2s ease-in-out;
 }
-#view2 .is-child:hover {
+#view2 article:hover {
   background: peachpuff;
 }
+
 .on-display {
   width: 100vw;
   height: 100vh;
