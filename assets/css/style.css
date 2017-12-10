@@ -40,3 +40,14 @@
 #view2 {
   background: gainsboro;
 }
+#view2 .is-child {
+  height: 12em;
+  text-align: center;
+}
+#view2 .is-child:hover {
+  background: peachpuff;
+}
+.on-display {
+  width: 100vw;
+  height: 100vh;
+}
