@@ -1,9 +1,9 @@
 /* General Styling here */
-html,
-body,
-.view1,
-.view2 {
-  height: 100%;
+.view {
+  height: 105vh;
+}
+.is-fixed-top {
+  margin-left: 1.5rem;
 }
 /* to here */
 
@@ -12,12 +12,15 @@ body,
 .navbar {
   background: transparent;
 }
+.navbar-item {
+  margin: 0 2.5em;
+
+}
 .navbar-item:hover {
-  text-decoration: underline;
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
 /* View 1 styling **/ 
-.view1 {
+#view1 {
   background: url("../img/DSC09707-min.JPG") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -34,7 +37,6 @@ body,
   color: white;
 }
 /* View 2 styling **/ 
-.view2 {
+#view2 {
   background: gainsboro;
-  
 }

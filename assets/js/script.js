@@ -19,7 +19,7 @@ $(document).ready(function() {
 	// main logic
 	$(document).scroll(function() {
 		console.log($(window).scrollTop(), screenheight)
-		if ($(window).scrollTop() > screenheight) {
+		if ($(window).scrollTop() > 50) {
 			fixNav();
 		} else {
 			unfixNav();
