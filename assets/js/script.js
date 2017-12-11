@@ -23,6 +23,6 @@ $(document).ready(function() {
 		console.log(projTitle);
 		$("#details #project-title").text(projTitle);
 		$(this).parents(".row").after($("#details"));
-		//try appedning directly to card
+		//try appending directly to card
   });
 })
