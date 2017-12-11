@@ -22,49 +22,49 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Link to Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
 
 	<!-- jQuery Script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
-<body class="fade-in">
 
-	<!-- NAVBAR START -->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-		<div class="navbar-brand">
-			<a class="navbar-item" href="/#">
-				<img src="assets/img/my_signature.png" alt="Andrew is a great developer!" height="30px" width="auto" alt="Andrew-Huang-logo">
-			</a>
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent"
-		 aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbar-menu">
-			<ul class="navbar-nav nav-fill w-100">
-				<li class="nav-item">
-					<a class="nav-link" href="/#">APPLICATIONS</a>					
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/#">UI/UX </a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/#">PHOTOGRAPHY</a>		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/#">ABOUT ME</a>		
-				</li>
-			</ul>
-		</div>	
-	</nav>
-	<!-- NAVBAR end -->
+<!-- NAVBAR START -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="myNavbar">
+	<div class="navbar-brand">
+		<a class="navbar-item" href="#">
+			<img src="assets/img/my_signature.png" alt="Andrew is a great developer!" height="30px" width="auto" alt="Andrew-Huang-logo">
+		</a>
+	</div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent"
+	aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbar-menu">
+	<ul class="navbar-nav nav-fill w-100">
+		<li class="nav-item">
+			<a class="nav-link" href="#view2">WEB DEV</a>					
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#view3">UI/UX </a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/#">PHOTOGRAPHY</a>		
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/#">ABOUT ME</a>		
+		</li>
+	</ul>
+</div>	
+</nav>
+<!-- NAVBAR end -->
+<body class="fade-in" data-spy="scroll" data-target="#myNavbar" data-offset="0">
 
 	<div class="jumbotron view" id="view1">
 		<div class=" center-hero">
 				<div>
-					<h1 class="title is-1 center-hero-content">Andrew Huang</h1>
+					<h1 class="center-hero-content">Andrew Huang</h1>
 					<h3 class="subtitle is-3 center-hero-content">developer | designer</h3>
 				</div>
 			</div>
@@ -72,31 +72,40 @@
 
 	<!-- Project View -->
 	<div class="container view" id="view2">
+		<h2 class="section-title">WEB DEV</h2>
 		<div class="row">
 			<div class="col-lg-6">
-				<article class="card" data-title="Chews" data-toggle="collapse" href="#details" aria-expanded="false" aria-controls="collapseExample"">
-					<p class="title">Chews</p>
-					<p class="subtitle">Front End Developer</p>
+				<article class="card" data-title="Chews" data-toggle="collapse" href="#details" aria-expanded="false" aria-controls="collapseExample">
+					<div class="card-content">
+						<p class="title">Chews</p>
+						<p class="subtitle">Front End Developer</p>
+					</div>
 				</article>
 			</div>
 			<div class="col-lg-6">
-				<article class="card" data-title="Qlink" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample "">
-					<p class="title">Qlink</p>
-					<p class="subtitle">Full Stack Developer | Scrum Master</p>
+				<article class="card" data-title="Qlink" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample">
+					<div class="card-content">
+						<p class="title">Qlink</p>
+						<p class="subtitle">Full Stack Developer | Scrum Master</p>
+					</div>
 				</article>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
-				<article class="card" data-title="NYT News Searcher" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample "">
-					<p class="title">NYT News Searcher</p>
-					<p class="subtitle">Full Stack Developer</p>
+				<article class="card" data-title="NYT News Searcher" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample">
+					<div class="card-content">
+						<p class="title">NYT News Searcher</p>
+						<p class="subtitle">Full Stack Developer</p>
+					</div>
 				</article>
 			</div>
 			<div class="col-lg-6">
-				<article class="card" data-title="'Get Outdoors!' CLI Hangman" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample "">
-					<p class="title">"Get Outdoors!" CLI Hangman</p>
-					<p class="subtitle">Full Stack Developer</p>
+				<article class="card" data-title="'Get Outdoors!' CLI Hangman" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample">
+					<div class="card-content">
+						<p class="title">"Get Outdoors!" CLI Hangman</p>
+						<p class="subtitle">Full Stack Developer</p>
+					</div>
 				</article>
 			</div>
 		</div>
@@ -111,7 +120,7 @@
 	<section class="section view" id="view3">
 		<div class="container">
 			<div class="row">
-				<h1>Portfolio</h1>
+				<h2 class="section-title">UI / UX</h2>
 			</div>
 		</div>
 	</section>

@@ -1,6 +1,11 @@
 /* General Styling here */
+body {
+  position: relative;
+  padding-top: 4rem;
+  font-family: 'Rubik', sans-serif;
+}
 .view {
-  height: 105vh;
+  height: auto;
 }
 .fade-in {
     -webkit-animation: fadein 1s;
@@ -9,6 +14,14 @@
     -o-animation: fadein 1s;
     animation: fadein 1s;
 }
+.subtitle {
+  font-weight: lighter;
+}
+.section-title {
+  padding: 6rem 0 1rem 0;
+  /* font-weight: lighter !important; */
+  
+}
 /* to here */
 
 /* Navbar Styling here */
@@ -16,12 +29,18 @@
   background: white !important;
   padding: 1rem 1.5rem !important;
 }
+.navbar-brand {
+  margin-right: 2rem;
+}
+.navbar-toggler {
+  border: 0;
+}
 .nav-item:hover {
   color: rgb(0, 0, 0) !important;
   background-color: none !important;
 }
 .nav-item {
-  font-size: 1.25rem;
+  font-size: 1.2  5rem;
   /* font-weight: lighter */
 }
 
@@ -56,13 +75,16 @@
 
 /* View 1 styling **/ 
 #view1 {
+  height: 105vh;
   background: url("../img/DSC09707-min.JPG") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin-top: 10px;
+  border-radius: 20px 20px 0 0;
 }
+
 .center-hero {
   color: white !important;
   text-align: center;
@@ -86,6 +108,11 @@
   height: 15rem;
   margin-bottom: 2rem;
 }
+.card-content {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
 .project-details {
   background: lightslategray;
   padding: 2em;
@@ -94,4 +121,10 @@
 .details-visible {
   width: 100vw;
   height: 100vh;
+}
+
+
+/* View3 Styles */
+#view3 {
+  background: white;
 }
