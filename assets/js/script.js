@@ -22,6 +22,7 @@ $(document).ready(function() {
 		let projTitle = $(this).attr("data-title");
 		console.log(projTitle);
 		$("#details #project-title").text(projTitle);
-    $(this).parents(".row").after($("#details"));
+		$(this).parents(".row").after($("#details"));
+		//try appedning directly to card
   });
 })
