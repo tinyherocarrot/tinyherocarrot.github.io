@@ -17,16 +17,11 @@ $(document).ready(function() {
 
 
 	// main logic
-	$(document).scroll(function() {
-		if ($(window).scrollTop() > 50) {
-			fixNav();
-		} else {
-			unfixNav();
-		}
-	})
+
 	$("article").click(function() {
-    $(this).toggleClass("tile");
-    $(this).toggleClass("is-child");
-    $(this).toggleClass("on-display");
+		let projTitle = $(this).attr("data-title");
+		console.log(projTitle);
+		$("#details #project-title").text(projTitle);
+    $(this).parents(".row").after($("#details"));
   });
 })

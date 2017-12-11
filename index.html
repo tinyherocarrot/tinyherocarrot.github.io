@@ -3,10 +3,17 @@
 
 <head>
 	<!-- IMPORTANT: for scaling to device screens! -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Link To Bulma -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+	<!-- Link to Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	 crossorigin="anonymous"></script>
 
 	<!-- Link to Font Awesome  -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,72 +29,85 @@
 
 </head>
 
-<body>
-	<section class="section view" id="view1">
-		<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a class="navbar-item" href="/">
-					<img src="assets/img/my_logo_white.png" alt="Andrew is a great developer!" height="60px" width="auto">
-				</a>
-				<button class="button navbar-burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-			<div class="navbar-menu">
-				<div class="navbar-start">
-					<a class="navbar-item" href="/applications">APPLICATIONS</a>			
-					<a class="navbar-item" href="/applications">UI/UX </a>			
-					<a class="navbar-item" href="/applications">PHOTOGRAPHY</a>
-					<a class="navbar-item" href="/about-me">ABOUT ME</a>
-				</div>
-			</div>
-		</nav>
+<body class="fade-in">
+
+	<!-- NAVBAR START -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/#">
+				<img src="assets/img/my_signature.png" alt="Andrew is a great developer!" height="30px" width="auto" alt="Andrew-Huang-logo">
+			</a>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar-menu">
+			<ul class="navbar-nav nav-fill w-100">
+				<li class="nav-item">
+					<a class="nav-link" href="/#">APPLICATIONS</a>					
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#">UI/UX </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#">PHOTOGRAPHY</a>		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#">ABOUT ME</a>		
+				</li>
+			</ul>
+		</div>	
+	</nav>
+	<!-- NAVBAR end -->
+
+	<div class="jumbotron view" id="view1">
 		<div class=" center-hero">
 				<div>
 					<h1 class="title is-1 center-hero-content">Andrew Huang</h1>
 					<h3 class="subtitle is-3 center-hero-content">developer | designer</h3>
 				</div>
 			</div>
-	</section>
+	</div>
 
-	<section class="section view" id="view2">
+	<!-- Project View -->
+	<div class="container view" id="view2">
+		<div class="row">
+			<div class="col-lg-6">
+				<article class="card" data-title="Chews" data-toggle="collapse" href="#details" aria-expanded="false" aria-controls="collapseExample"">
+					<p class="title">Chews</p>
+					<p class="subtitle">Front End Developer</p>
+				</article>
+			</div>
+			<div class="col-lg-6">
+				<article class="card" data-title="Qlink" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample "">
+					<p class="title">Qlink</p>
+					<p class="subtitle">Full Stack Developer | Scrum Master</p>
+				</article>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<article class="card" data-title="NYT News Searcher" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample "">
+					<p class="title">NYT News Searcher</p>
+					<p class="subtitle">Full Stack Developer</p>
+				</article>
+			</div>
+			<div class="col-lg-6">
+				<article class="card" data-title="'Get Outdoors!' CLI Hangman" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample "">
+					<p class="title">"Get Outdoors!" CLI Hangman</p>
+					<p class="subtitle">Full Stack Developer</p>
+				</article>
+			</div>
+		</div>
+
 		
-				
-				<!-- Projects Body -->				
-				<div class="tile is-ancestor">
-					<div class="tile is-parent">		
-						<article class="tile is-child box ">
-							<p class="title">Chews</p>
-							<p class="subtitle">Front End Developer</p>
-						</article>
-					</div>
-				</div>
-				<div class="tile is-ancestor">
-					<div class="tile is-parent">
-						<article class="tile is-child box ">
-							<p class="title">Qlink</p>
-							<p class="subtitle">Full Stack Developer | Scrum Master</p>
-						</article>
-					</div>
-					<div class="tile is-parent">
-						<article class="tile is-child box">
-							<p class="title">NYT News Searcher</p>
-							<p class="subtitle">Full Stack Developer</p>
-						</article>
-					</div>
-				</div>
-				<div class="tile is-ancestor">
-					<div class="tile is-parent">
-						<article class="tile is-child box ">
-							<p class="title">"Get Outdoors!" CLI Hangman</p>
-							<p class="subtitle">Full Stack Developer</p>
-						</article>
-					</div>
-				</div>
-	</section>
-
+		
+	</div>
+	<!-- Projects Details Container -->
+	<section class="project-details" id="details">
+		<h3 id="project-title">Project Title</h3>
+	</section>			
 	<section class="section view" id="view3">
 		<div class="container">
 			<div class="row">
