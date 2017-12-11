@@ -47,19 +47,19 @@
 			<a class="nav-link" href="#view2">WEB DEV</a>					
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#view3">UI/UX </a>
+			<a class="nav-link disabled" href="#view3">UI/UX </a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/#">PHOTOGRAPHY</a>		
+			<a class="nav-link disabled" href="#">PHOTOGRAPHY</a>		
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/#">ABOUT ME</a>		
+			<a class="nav-link" href="#">ABOUT ME</a>		
 		</li>
 	</ul>
 </div>	
 </nav>
 <!-- NAVBAR end -->
-<body class="fade-in" data-spy="scroll" data-target="#myNavbar" data-offset="0">
+<body data-spy="scroll" data-target="#myNavbar" data-offset="0">
 
 	<div class="jumbotron view" id="view1">
 		<div class=" center-hero">
@@ -83,15 +83,15 @@
 				</article>
 
 				<!-- Chews Modal -->
-				<div class="modal fade" id="modalChews" tabindex="-1" role="dialog" aria-labelledby="modalChews" aria-hidden="true">
+				<div class="modal fade-in" id="modalChews" tabindex="-1" role="dialog" aria-labelledby="modalChews" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							<h5 class="modal-title" id="exampleModalLabel">Chews</h5>
 							<div class="modal-body">
-								Hey whats up yall this is my app
+								<h5 class="modal-title" id="exampleModalLabel">Chews</h5>
+								<p>Hey whats up yall this is my app</p>
 							</div>
 							<div class="modal-footer">
 								<a href="#">GitHub</a>
@@ -101,42 +101,103 @@
 				</div>
 			</div>
 			<div class="col-lg-6">
-				<article class="card" data-title="Qlink" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample">
+				<article class="card" data-title="Qlink" data-toggle="modal" data-target="#modalQlink">
 					<div class="card-content">
 						<p class="title">Qlink</p>
 						<p class="subtitle">Full Stack Developer | Scrum Master</p>
 					</div>
 				</article>
+
+				<!-- QLINK Modal -->
+				<div class="modal fade-in" id="modalQlink" tabindex="-1" role="dialog" aria-labelledby="modalQlink" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="modal-body">
+								<div class="container-fluid">
+									<h5 class="modal-title" id="exampleModalLabel">Qlink</h5>
+									<p>Hey whats up yall this is my app</p>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<a href="#">GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
-				<article class="card" data-title="NYT News Searcher" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample">
+				<article class="card" data-title="NYT News Searcher" data-toggle="modal" data-target="#modalMERNNYT">
 					<div class="card-content">
 						<p class="title">NYT News Searcher</p>
 						<p class="subtitle">Full Stack Developer</p>
 					</div>
 				</article>
+
+				<!-- MERN NYT Modal -->
+				<div class="modal fade-in" id="modalMERNNYT" tabindex="-1" role="dialog" aria-labelledby="modalMERNNYT" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="modal-body">
+								<h5 class="modal-title" id="exampleModalLabel">Chews</h5>
+								<p>Hey whats up yall this is my app</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#">GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-6">
-				<article class="card" data-title="'Get Outdoors!' CLI Hangman" data-toggle=" collapse " href="#details " aria-expanded="false " aria-controls="collapseExample">
+				<article class="card" data-title="'Get Outdoors!' CLI Hangman" data-toggle="modal" data-target="#modalHangman">
 					<div class="card-content">
 						<p class="title">"Get Outdoors!" CLI Hangman</p>
 						<p class="subtitle">Full Stack Developer</p>
 					</div>
 				</article>
+
+				<!-- CLI Hangman Modal -->
+				<div class="modal fade-in" id="modalHangman" tabindex="-1" role="dialog" aria-labelledby="modalHangman" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="modal-body">
+								<h5 class="modal-title" id="exampleModalLabel">Chews</h5>
+								<p>Hey whats up yall this is my app</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#">GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		
 		
 	</div>
-	<!-- Projects Details Container -->
-	<section class="project-details" id="details">
-		<h3 id="project-title">Project Title</h3>
-	</section>			
-	<div class="container view" id="view3">
-		<h2 class="section-title">UI / UX</h2>
+		
+	<div class="view" id="view3">
+		<div class="container">
+			<h2 class="section-title">About Me</h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<p>Lorem ipsum dolor amet schlitz waistcoat shoreditch art party cray, seitan snackwave hot chicken banh mi. Farm-to-table gochujang helvetica, seitan organic activated charcoal tousled lo-fi. Put a bird on it everyday carry gastropub glossier taiyaki williamsburg adaptogen, leggings shaman meh +1 mumblecore. Cronut offal forage, chicharrones 8-bit biodiesel mlkshk hashtag freegan YOLO poke. Four dollar toast microdosing fixie shaman poke blue bottle.</p>
+
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<script src="assets/js/script.js"></script>
