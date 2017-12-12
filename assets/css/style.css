@@ -48,6 +48,10 @@ body {
 svg {
   margin-right: 0.75rem;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 /* to here */
 
 /* Navbar Styling here */
@@ -143,16 +147,30 @@ svg {
   background: gainsboro;
 }
 .card {
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 0 !important;
   text-align: right;
   height: 15rem;
   margin-bottom: 2rem;
+  border: 0;
+}
+.card-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(109, 108, 108, 0.562);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.card:hover .card-overlay {
+  opacity: 1
 }
 .card-content {
   position: absolute;
   bottom: 1rem;
   right: 2rem;
+  color: white
 }
 
 
@@ -176,28 +194,32 @@ svg {
 }
 .modal-content > button > span {
   float: right;
-  margin: 1rem
+  margin: 1.5rem
 }
 .close {
   text-shadow: none;
   font-size: 2.5rem;
   font-weight: 300;
+  color: rgb(87, 87, 87);
 }
 .close:hover {
-  color: white;
+  color: rgb(182, 182, 182)
 }
 /* .fa-long-arrow-alt-left {
   transition: left 3s;
-}
-.back-to-proj:hover svg{
-  left: 20px;
 } */
+.back-to-proj:hover {
+  cursor: pointer;
+}
 .modal-backdrop {
   display: none;
 }
 .modalHeaderImg {
   width: 100%;
   height: auto;
+}
+.modalColLeft {
+  margin-bottom: 1rem;
 }
 /* ------------------------ */
 

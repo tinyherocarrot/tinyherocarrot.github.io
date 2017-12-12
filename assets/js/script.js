@@ -6,13 +6,12 @@ $(document).ready(function() {
 
 	// functions
 	// -------------------
-	function fixNav() {
-		$(".navbar").addClass("is-fixed-top");
-		$("html").addClass("has-navbar-fixed-top");
-	}
-	function unfixNav() {
-    $(".navbar").removeClass("is-fixed-top");
-    $("html").removeClass("has-navbar-fixed-top");
+	function closeAll() {
+		$("#modalChews").modal("hide");
+    $("#modalQlink").modal("hide");
+		$("#modalMERNNYT").modal("hide");
+		$("#modalHangman").modal("hide");
+		$("#navbar-menu").removeClass('show');
 	}
 
 
@@ -20,7 +19,12 @@ $(document).ready(function() {
 
 	// clicking a navbar link or brand should 
 	// close open modals, and close the navbar menu
-
+	$(".nav-link").click(function() {
+		closeAll();
+	});
+	$(".back-to-proj").click(function() {
+		closeAll();
+	})
 	$("article").click(function() {
 		let projTitle = $(this).attr("data-title");
 		console.log(projTitle);
