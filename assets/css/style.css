@@ -233,10 +233,10 @@ a:hover {
 .fa-github, .fa-external-link-alt {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: gainsboro;
+  color: rgb(98, 98, 98);
 }
 .project-links svg:hover {
-  color: pink;
+  color: gainsboro;
 }
 /* ------------------------ */
 
