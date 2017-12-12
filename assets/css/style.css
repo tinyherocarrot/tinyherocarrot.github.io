@@ -235,6 +235,9 @@ a:hover {
   margin-bottom: 1rem;
   color: gainsboro;
 }
+.project-links svg:hover {
+  color: pink;
+}
 /* ------------------------ */
 
 /* View3 Styles */
