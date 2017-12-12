@@ -18,6 +18,9 @@ $(document).ready(function() {
 
 	// main logic
 
+	// clicking a navbar link or brand should 
+	// close open modals, and close the navbar menu
+
 	$("article").click(function() {
 		let projTitle = $(this).attr("data-title");
 		console.log(projTitle);

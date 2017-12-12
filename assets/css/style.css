@@ -44,8 +44,9 @@ body {
 }
 .section-title {
   padding: 6rem 0 1rem 0;
-  /* font-weight: lighter !important; */
-  
+}
+svg {
+  margin-right: 0.75rem;
 }
 /* to here */
 
@@ -153,17 +154,13 @@ body {
   bottom: 1rem;
   right: 2rem;
 }
-.project-details {
-  background: lightslategray;
-  padding: 2em;
-  margin-bottom: 2rem;
-}
-.details-visible {
-  width: 100vw;
-  height: 100vh;
-}
+
 
 /* Modal Manipulation HERE */
+.modal {
+  z-index: 1000;
+  margin-top: 10vh;
+}
 .modal-dialog {
   margin: 0;
 }
@@ -172,7 +169,10 @@ body {
   height: 100vh;
   border: 0 !important;
   border-radius: 0 !important;
-  background: lightslategray
+}
+.modal-body {
+  background: white;
+  padding: 3rem;  
 }
 .modal-content > button > span {
   float: right;
@@ -183,9 +183,27 @@ body {
   font-size: 2.5rem;
   font-weight: 300;
 }
+.close:hover {
+  color: white;
+}
+/* .fa-long-arrow-alt-left {
+  transition: left 3s;
+}
+.back-to-proj:hover svg{
+  left: 20px;
+} */
+.modal-backdrop {
+  display: none;
+}
+.modalHeaderImg {
+  width: 100%;
+  height: auto;
+}
 /* ------------------------ */
 
 /* View3 Styles */
 #view3 {
   background: lightseagreen;
+  color: white;
+  height: 60vh;
 }
