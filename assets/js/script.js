@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 	// clicking a navbar link or brand should 
 	// close open modals, and close the navbar menu
-	$(".nav-link").click(function() {
+	$(".nav-item").click(function() {
 		closeAll();
 	});
 	$(".back-to-proj").click(function() {

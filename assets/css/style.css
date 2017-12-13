@@ -44,6 +44,7 @@ body {
 }
 .section-title {
   padding: 6rem 0 1rem 0;
+  font-weight: lighter
 }
 svg {
   margin-right: 0.75rem;
@@ -68,6 +69,7 @@ a:hover {
   background: white !important;
   padding: 1rem 1.5rem !important;
   animation: 1s slidein ease-out;
+  
   overflow: hidden
 }
 .navbar-brand {
@@ -243,16 +245,32 @@ a:hover {
 }
 /* ------------------------ */
 
-/* View3 Styles */
+/* Contact Styles */
+.contact-link {
+  color: white;
+  text-decoration: underline;
+}
 #contact {
   background: lightseagreen;
   color: white;
-  height: 100vh
+  height: auto;
+  max-height: 90vh;
+  overflow: hidden
 }
+.me-pic {
+  height: auto;
+  width: 100%
+}
+
 
 /* Media Queries */
 /* ------------- */
 @media (max-width: 768px) {
-  #view3 {
+  #contact {
+    max-height: auto;
+  }
+  .me-pic-col {
+    height: 60vh;
+    overflow: hidden;
   }
 }
