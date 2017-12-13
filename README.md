@@ -3,4 +3,9 @@ _Portfolio Website_
 
 
 ###Todo
-* Home: Logo (medium) fade-fly up and in in place, menu fade in underneath, which transitions to a nav?
+- [x] Contact links in About Me
+- [ ] Add Favicons
+- [ ] Add Descriptions to projects
+- [ ] Iron out mobile responsiveness in About Me
+- [ ] Add UI/UX section
+- [ ] Add Photography section
