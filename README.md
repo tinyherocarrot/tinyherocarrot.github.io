@@ -2,7 +2,7 @@
 _Portfolio Website_
 
 
-###Todo
+### Todo
 - [x] Contact links in About Me
 - [ ] Add Favicons
 - [ ] Add Descriptions to projects
