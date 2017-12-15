@@ -156,6 +156,7 @@ a:hover {
 /* View 2 styling **/ 
 #web-dev {
   background: white;
+  margin-bottom: 2.5rem;
 }
 #web-dev article:hover {
   background: gainsboro;
