@@ -189,7 +189,7 @@ a:hover {
 }
 
 
-/* Modal Manipulation HERE */
+/* -----------Modal Styling HERE------------ */
 .modal {
   z-index: 1000;
   margin-top: 10vh;
@@ -244,7 +244,7 @@ a:hover {
 .project-links svg:hover {
   color: gainsboro;
 }
-/* ------------------------ */
+/* -----------MODAL STYLE END------------- */
 
 /* Contact Styles */
 .contact-link {
@@ -255,8 +255,12 @@ a:hover {
   background: lightseagreen;
   color: white;
   height: auto;
-  max-height: 90vh;
-  overflow: hidden
+  overflow: hidden;
+
+}
+.about-me-text {
+  padding-right: 3rem!important;
+  
 }
 .me-pic {
   height: auto;
@@ -266,12 +270,21 @@ a:hover {
 
 /* Media Queries */
 /* ------------- */
+@media (min-width: 769px) {
+  #contact {
+    max-height:90vh;
+  }
+}
 @media (max-width: 768px) {
   #contact {
-    max-height: auto;
+    min-height: auto;
+    overflow-y: visible;
   }
   .me-pic-col {
     height: 60vh;
     overflow: hidden;
+  }
+  .about-me-text {
+    padding-right: 1rem!important; 
   }
 }
